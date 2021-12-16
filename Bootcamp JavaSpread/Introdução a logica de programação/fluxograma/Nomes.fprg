@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="camil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-07 05:40:25 "/>
+        <attribute name="created" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDc7IjA1OjIyOjMxICI7Mjc4Mg=="/>
+        <attribute name="edited" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDc7IjA1OjQwOjI1ICI7MjsyODk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite seu Sobrenome&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Ok, agora digite suas notas&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;M&#195;E: Parab&#233;ns &quot; &amp; nome &amp; &quot;, orgulho da mam&#227;e!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;M&#195;E: &quot; &amp; nome &amp;&quot; &quot; &amp; sobrenome &amp; &quot;, Nem Acredito que voc&#234; reprovou!!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

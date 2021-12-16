@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="camil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-07 04:58:13 "/>
+        <attribute name="created" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDc7IjA0OjM2OjQ1ICI7Mjc5MQ=="/>
+        <attribute name="edited" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDc7IjA0OjU4OjEzICI7NTsyOTAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomeDoCliente" type="String" array="False" size=""/>
+            <declare name="temCartao" type="Boolean" array="False" size=""/>
+            <declare name="numeroCartao" type="String" array="False" size=""/>
+            <declare name="novoCartao" type="Boolean" array="False" size=""/>
+            <output expression="&quot; Bem vindo a Loja!&quot; &amp; &quot; Digite seu nome&quot;" newline="True"/>
+            <input variable="nomeDoCliente"/>
+            <output expression="&quot;Voc&#234; possui cart&#227;o de cr&#233;dito?&quot;" newline="True"/>
+            <input variable="temCartao"/>
+            <if expression="temCartao">
+                <then>
+                    <output expression="&quot; Otimo! digite o n&#250;mero do seu cart&#227;o&quot;" newline="False"/>
+                    <input variable="numeroCartao"/>
+                    <output expression="&quot;Tudo certo, agora &#233; s&#243; esperar a confirma&#231;&#227;o de pagamento e enviaremos seu c&#243;digo de rastreio. Volte sempre&quot;" newline="True"/>
+                    <output expression="&quot;Seu c&#243;digo de rastreio &#233;: KAJSDKFIEK627637263 &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; Infelizmente &#233; necess&#225;rio adicionar um cart&#227;o v&#225;lido para prosseguir com a compra&quot; &amp; &quot; Voc&#234; gostaria de fazer o cart&#227;o da loja?&quot;" newline="True"/>
+                    <input variable="novoCartao"/>
+                    <if expression="novoCartao">
+                        <then>
+                            <assign variable="numeroCartao" expression="&quot;1766.0992.8765.3264&quot;"/>
+                            <output expression="&quot;Seu novo cart&#227;o foi criado com sucesso! agora &#233; s&#243; esperar a confirma&#231;&#227;o de pagamento e enviaremos seu c&#243;digo de rastreio&quot;" newline="True"/>
+                            <output expression="&quot;Seu c&#243;digo de rastreio &#233;: KAJSDKFIEK627637263 &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; Infelizmente n&#227;o poderemos prosseguir com a compra :( &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="camil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-07 05:22:28 "/>
+        <attribute name="created" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDc7IjA1OjA0OjIzICI7Mjc4Mw=="/>
+        <attribute name="edited" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDc7IjA1OjIyOjI4ICI7MjsyODk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Digite o valor das suas vendas dos ultimos 4 meses:&quot;" newline="True"/>
+            <declare name="janeiro, fevereiro, marco, abril, media" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro+fevereiro+marco+abril)/4"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns!! Voc&#234; alcan&#231;ou a meta e receber&#225; 10% de abono&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; n&#227;o alcan&#231;ou a meta, e receber&#225; apenas 3% de abono&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

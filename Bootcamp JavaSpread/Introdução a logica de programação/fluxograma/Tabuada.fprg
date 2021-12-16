@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="camil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-08 01:56:35 "/>
+        <attribute name="created" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDg7IjEyOjUwOjE4ICI7Mjc4Nw=="/>
+        <attribute name="edited" value="Y2FtaWw7REVTS1RPUC1TSkU2UzJPOzIwMjEtMDktMDg7IjAxOjU2OjM1ICI7MjsyODk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="multiplicando, multiplicador, resultado, numeroMaximo, multiplicadorMaximo" type="Integer" array="False" size=""/>
+            <declare name="tabuada" type="Boolean" array="False" size=""/>
+            <assign variable="tabuada" expression="true"/>
+            <output expression="&quot;Digite o numero do multiplicando que deseja come&#231;ar&quot;" newline="True"/>
+            <input variable="multiplicando"/>
+            <output expression="&quot;Digite o valor maximo do multiplicador&quot;" newline="True"/>
+            <input variable="multiplicadorMaximo"/>
+            <output expression="&quot;Digite at&#233; qual tabuada deseja realizar o calculo&quot;" newline="True"/>
+            <input variable="numeroMaximo"/>
+            <while expression="tabuada">
+                <if expression="multiplicando &lt;=numeroMaximo">
+                    <then>
+                        <output expression="&quot;Tabuada do &quot; &amp; multiplicando" newline="True"/>
+                        <for variable="multiplicador" start="1" end="multiplicadorMaximo" direction="inc" step="1">
+                            <assign variable="resultado" expression="multiplicando*multiplicador"/>
+                            <output expression="multiplicando &amp; &quot;x&quot; &amp; multiplicador &amp; &quot;=&quot; &amp; resultado" newline="True"/>
+                        </for>
+                        <assign variable="multiplicando" expression="multiplicando+1"/>
+                        <assign variable="multiplicador" expression="1"/>
+                    </then>
+                    <else>
+                        <assign variable="tabuada" expression="false"/>
+                        <output expression="&quot;Tarefa Conclu&#237;da&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
