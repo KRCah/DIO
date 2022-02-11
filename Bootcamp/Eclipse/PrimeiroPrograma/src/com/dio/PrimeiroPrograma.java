@@ -13,7 +13,7 @@ public class PrimeiroPrograma {
 		String nome = gato.getNome();
 		int b=2;
 
-		System.out.println("Hello World, " + nome +" have "+ a +" years old");
+		System.out.println("Hello World, " + nome +" have "+ a +" years old" + "valor de b" + b);
 
 	}
 
