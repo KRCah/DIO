@@ -3,6 +3,8 @@
 ## Repositório criado para publicar e armazenar os trabalhos e desafios da DIO 
 
 ### Organização das Pastas
-- JavaSpread
-  - Introdução a Programação
+- Bootcamp
+  - Introdução a lógica de Programação
   - Git/Github
+  - Eclipse
+  - IDEs Java
