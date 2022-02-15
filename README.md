@@ -6,5 +6,5 @@
 - Bootcamp
   - Introdução a lógica de Programação
   - Git/Github
-  - Eclipse
+  - Estruturas de Dados em Java: Introdução
   - IDEs Java
